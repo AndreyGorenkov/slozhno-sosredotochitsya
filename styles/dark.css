@@ -4,9 +4,76 @@
   переключая тему
 */
 
+:root .theme_dark {
+  --main-font: IBM Plex Mono;
+  --main-font-size: 18px;
+  --main-text-color: #F1B2CE;
+  --main-font-weight: 400;
+  --main-font-style: normal;
+  --main-line-height: 23.4px;
+  --title-font-size: 18px;
+  --title-color: #000028;
+  --decoration-text-color: #FF0070;
+  --attractive-text-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --attractive-text-color: #DB00FF;
+  --attractive-text-weight: 700;
+  --attractive-text-line-height: 82.5%;
+  --attractive-text-shadow: 4px 4px 0px #FF0070;
+  --button-text-color: #FF0070;
+  --active-button-border: 1px solid #FF0070;
+  --hover-button-border: 1px solid rgba(255, 0, 112, 0.40);
+  --focus-button-border: 1px solid #FF0070;
+  --section-margin-bottom: 50px;
+  --subtitle-font-size: 18px;
+  --subtitle-text-color: #FF0070;
+  --subtitle-font-weight: 700;
+  --subtitle-font-style: normal;
+  --subtitle-line-height: 23.4px;
+  --subtitle-margin-bottom: 20px;
+  --subsubtitle-font-size: 18px;
+  --subsubtitle-text-color: #000028;
+  --subsubtitle-font-weight: 700;
+  --subsubtitle-font-style: normal;
+  --subsubtitle-line-height: 23.4px;
+  --subsubtitle-margin-bottom: 10px;
+  --accent-paragraph-text-color: #000028;
+  --accent-paragraph-margin-bottom: 10px;
+  --paragraph-margin-bottom: 20px;
+  --accent-text-color: #000028;
+  --accent-bg-color: #FF0070;
+  --link-shadow: 2px 2px 0 #FF0070;
+  --focus-link-border: 1px solid #F1B2CE;
+  --footer-attractive-text-color: #DB00FF;
+  --footer-attractive-text-shadow: 2px 2px 0px #FF0070;
+}
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background: #000028;
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.theme_dark .decoration-border::before {
+  border-top: 1px solid #FF0070;
+  border-right: 1px solid #FF0070;
+}
+
+.theme_dark .second-decoration-border::before {
+  border-bottom: 1px solid #FF0070;
+  border-left: 1px solid #FF0070;
+}
+
+.theme_dark .decoration-point::before {
+  display: block;
+}
+
+.theme_dark .decoration-text::before {
+  display: block;
 }
