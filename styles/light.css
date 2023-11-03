@@ -5,6 +5,7 @@
 */
 
 :root .theme_light {
+  --backup-background: #FFF1F7;
   --main-font: IBM Plex Mono;
   --main-font-size: 18px;
   --main-text-color: #353430;
@@ -13,7 +14,8 @@
   --main-line-height: 23.4px;
   --title-font-size: 18px;
   --title-color: #353430;
-  --attractive-text-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --attractive-text-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --attractive-text-size-table-pk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --attractive-text-color: #FFC2E6;
   --attractive-text-weight: 700;
   --attractive-text-line-height: 82.5%;
@@ -46,40 +48,43 @@
   --footer-attractive-text-shadow: 2px 2px 0px #FF8DCB;
 }
 
+/* Убрал лишние свойства. Всё остальное необходимо, чтобы верстка работала при разных цветовых темах. :root по заданию должен быть продублирован в dark.css и light.css*/
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background: #ffeef7;
+  background: var(--backup-background, #FFF1F7);
   background-image: url(../images/cover-image-light.png);
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.theme_light .decoration-border::before {
+.theme_light .header::before {
   border-top: 1px solid #353430;
   border-right: 1px solid #353430;
 }
 
-.theme_light .second-decoration-border::before {
+.theme_light .header::after {
   border-bottom: 1px solid #353430;
   border-left: 1px solid #353430;
 }
 
-.theme_light .decoration-point::before {
+.theme_light .decoration-element::before {
   display: none;
 }
 
-.theme_light .decoration-text::before {
+.theme_light .decoration-element::after {
   display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
         /* Дублируем переменные светлой темы */
+        --backup-background: #FFF1F7;
         --main-font: IBM Plex Mono;
         --main-font-size: 18px;
         --main-text-color: #353430;
@@ -88,7 +93,8 @@
         --main-line-height: 23.4px;
         --title-font-size: 18px;
         --title-color: #353430;
-        --attractive-text-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+        --attractive-text-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+        --attractive-text-size-table-pk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
         --attractive-text-color: #FFC2E6;
         --attractive-text-weight: 700;
         --attractive-text-line-height: 82.5%;
@@ -119,36 +125,39 @@
         --focus-link-border: 1px solid #353430;
         --footer-attractive-text-color: #FFC2E6;
         --footer-attractive-text-shadow: 2px 2px 0px #FF8DCB;    
+    
     }
+
+/* Убрал лишние свойства. Всё остальное необходимо, чтобы верстка работала при разных цветовых темах. :root по заданию должен быть продублирован в dark.css и light.css*/
 
     .page {
       /* сохраните этот селектор в приведённом виде.
         Так стили написанные ниже будут иметь больший вес,
         чем стили в медиазапросе предпочтений пользователя
       */
-      background: #ffeef7;
+      background: var(--backup-background, #FFF1F7);
       background-image: url(../images/cover-image-light.png);
-      background-position: center top;
+      background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
 
-    .decoration-border::before {
+    .header::before {
       border-top: 1px solid #353430;
       border-right: 1px solid #353430;
     }
     
-    .second-decoration-border::before {
+    .header::after {
       border-bottom: 1px solid #353430;
       border-left: 1px solid #353430;
     }
-    
-    .decoration-point::before {
+
+    .decoration-element::before {
       display: none;
     }
-    
-    .decoration-text::before {
+
+    .decoration-element::after {
       display: none;
     }
 
