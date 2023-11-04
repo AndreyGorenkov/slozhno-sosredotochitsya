@@ -50,8 +50,6 @@
   --footer-attractive-text-shadow: 2px 2px 0px #FF0070;
 }
 
-/* Убрал лишние свойства. Всё остальное необходимо, чтобы верстка работала при разных цветовых темах. :root по заданию должен быть продублирован в dark.css и light.css*/
-
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -60,12 +58,12 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
-.theme_dark .header::before {
+.theme_dark .decorated-zone::before {
   border-top: 1px solid #FF0070;
   border-right: 1px solid #FF0070;
 }
 
-.theme_dark .header::after {
+.theme_dark .decorated-zone::after {
   border-bottom: 1px solid #FF0070;
   border-left: 1px solid #FF0070;
 }
