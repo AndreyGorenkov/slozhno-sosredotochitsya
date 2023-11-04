@@ -6,7 +6,7 @@
   height: 100vh;
   padding: 10px;
   background: var(--backup-background, #000028);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--backgroung-img, url(../images/cover-image.png));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

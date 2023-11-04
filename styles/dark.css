@@ -5,6 +5,7 @@
 */
 
 :root .theme_dark {
+  --backgroung-img: url(../images/cover-image-dark.png);
   --backup-background: #000028;
   --main-font: IBM Plex Mono;
   --main-font-size: 18px;
@@ -55,7 +56,6 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-image: url(../images/cover-image-dark.png);
 }
 
 .theme_dark .decorated-zone::before {
