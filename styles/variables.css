@@ -2,6 +2,7 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
 :root {
   --backgroung-img: url(../images/cover-image-dark.png);
   --backup-background: #000028;
@@ -20,10 +21,10 @@
   --attractive-text-color: #DB00FF;
   --attractive-text-weight: 700;
   --attractive-text-line-height: 82.5%;
-  --attractive-text-shadow: 4px 4px 0px #FF0070;
+  --attractive-text-shadow: 4px 4px 0 #FF0070;
   --button-text-color: #FF0070;
   --active-button-border: 1px solid #FF0070;
-  --hover-button-border: 1px solid rgba(255, 0, 112, 0.40);
+  --hover-button-border: 1px solid rgba(255 0 112 / 0.40);
   --focus-button-border: 1px solid #FF0070;
   --section-margin-bottom: 50px;
   --subtitle-font-size: 18px;
@@ -46,5 +47,5 @@
   --link-shadow: 2px 2px 0 #FF0070;
   --focus-link-border: 1px solid #F1B2CE;
   --footer-attractive-text-color: #DB00FF;
-  --footer-attractive-text-shadow: 2px 2px 0px #FF0070;
+  --footer-attractive-text-shadow: 2px 2px 0 #FF0070;
 }

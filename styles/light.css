@@ -20,10 +20,10 @@
   --attractive-text-color: #FFC2E6;
   --attractive-text-weight: 700;
   --attractive-text-line-height: 82.5%;
-  --attractive-text-shadow: 4px 4px 0px #FF8DCB;
+  --attractive-text-shadow: 4px 4px 0 #FF8DCB;
   --button-text-color: #353430;
   --active-button-border: 1px solid #353430;
-  --hover-button-border: 1px solid rgba(50, 49, 45, 0.40);
+  --hover-button-border: 1px solid rgba(50 49 45 / 0.40);
   --focus-button-border: 1px solid #353430;
   --section-margin-bottom: 50px;
   --subtitle-font-size: 18px;
@@ -46,7 +46,7 @@
   --link-shadow: 2px 2px 0 #FF8DCB;
   --focus-link-border: 1px solid #353430;
   --footer-attractive-text-color: #FFC2E6;
-  --footer-attractive-text-shadow: 2px 2px 0px #FF8DCB;
+  --footer-attractive-text-shadow: 2px 2px 0 #FF8DCB;
 }
 
 .page.theme_light {
@@ -75,6 +75,7 @@
 }
 
 @media (prefers-color-scheme: light) {
+  
   :root {
         /* Дублируем переменные светлой темы */
         --backgroung-img: url(../images/cover-image-light.png);
@@ -92,10 +93,10 @@
         --attractive-text-color: #FFC2E6;
         --attractive-text-weight: 700;
         --attractive-text-line-height: 82.5%;
-        --attractive-text-shadow: 4px 4px 0px #FF8DCB;
+        --attractive-text-shadow: 4px 4px 0 #FF8DCB;
         --button-text-color: #353430;
         --active-button-border: 1px solid #353430;
-        --hover-button-border: 1px solid rgba(50, 49, 45, 0.40);
+        --hover-button-border: 1px solid rgba(50 49 45 / 0.40);
         --focus-button-border: 1px solid #353430;
         --section-margin-bottom: 50px;
         --subtitle-font-size: 18px;
@@ -118,7 +119,7 @@
         --link-shadow: 2px 2px 0 #FF8DCB;
         --focus-link-border: 1px solid #353430;
         --footer-attractive-text-color: #FFC2E6;
-        --footer-attractive-text-shadow: 2px 2px 0px #FF8DCB;    
+        --footer-attractive-text-shadow: 2px 2px 0 #FF8DCB;    
     
     }
 
